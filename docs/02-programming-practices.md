@@ -50,7 +50,7 @@ We will take a closer look at two concrete examples, one on each end of the soft
 
 Imagine that you have two sampling distributions (lists/arrays of numbers) and you want to test whether the means of the distributions are statistically equivalent or not.
 This is the setup for a _t_-test.
-_t_-tests are implemented in standard functions in R ([`base` library](https://rdrr.io/r/base/base-package.html)) and Python ([`scipy` library](https://scipy.org/)), as well as most other commonly used programming languages.
+_t_-tests are implemented in standard functions in [base R](https://rdrr.io/r/base/base-package.html) and [Python `scipy` library](https://scipy.org/), as well as most other commonly used programming languages.
 
 <img src="02-programming-practices_files/figure-html//1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g287bcb243d2_0_122.png" width="100%" style="display: block; margin: auto;" />
 
@@ -62,7 +62,7 @@ In your own software, you might need to do some verification of your input (for 
 
 Imagine that you have a list of reads from a [DNA sequencing](https://en.wikipedia.org/wiki/DNA_sequencing#High-throughput_methods) machine, and you want to use these data to answer a biological question, or to make a plot/visualization to communicate a biological insight.
 This is a much less well-defined problem than our previous example, with many more independently operating components, and many more subjective decisions that a researcher must make along the way.
-Complex data analyses means complex decisions! This often means that decisions made are not so cut and dry and should rely on the scientific context of the data. In other words, analyses often are tailored to reflect the biology (or other science) and or perhaps the experimental goals. 
+Complex data analyses means complex decisions! This often means that decisions made are not so cut and dry and should rely on the scientific context of the data. In other words, analyses often are tailored to reflect the biology (or other science) and or perhaps the experimental goals.
 
 <img src="02-programming-practices_files/figure-html//1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g28fb47c580d_0_152.png" width="100%" style="display: block; margin: auto;" />
 
@@ -96,4 +96,3 @@ This eliminates the need for you to remember to run tests, to clean up your code
 <img src="02-programming-practices_files/figure-html//1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g28fb47c580d_0_55.png" width="100%" style="display: block; margin: auto;" />
 
 Later in the course, we will talk more specifically about what exactly automation via continuous integration looks like, and go into more depth as to its uses and benefits.
-

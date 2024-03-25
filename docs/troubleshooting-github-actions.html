@@ -131,9 +131,9 @@ div.csl-indent {
 <li class="chapter" data-level="3.1.1" data-path="why-automation.html"><a href="why-automation.html#why-reproducibility-is-so-important."><i class="fa fa-check"></i><b>3.1.1</b> Why reproducibility is so important.</a></li>
 <li class="chapter" data-level="3.1.2" data-path="why-automation.html"><a href="why-automation.html#automation-as-a-reproducibility-tool"><i class="fa fa-check"></i><b>3.1.2</b> Automation as a reproducibility tool</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="why-automation.html"><a href="why-automation.html#continuous-integration-continous-deployment"><i class="fa fa-check"></i><b>3.2</b> Continuous integration / Continous deployment</a>
+<li class="chapter" data-level="3.2" data-path="why-automation.html"><a href="why-automation.html#continuous-integration-continuous-deployment"><i class="fa fa-check"></i><b>3.2</b> Continuous integration / Continuous deployment</a>
 <ul>
-<li class="chapter" data-level="3.2.1" data-path="why-automation.html"><a href="why-automation.html#continous-integration-continuous-deployment"><i class="fa fa-check"></i><b>3.2.1</b> Continous Integration / Continuous Deployment</a></li>
+<li class="chapter" data-level="3.2.1" data-path="why-automation.html"><a href="why-automation.html#continuous-integration-continuous-deployment-1"><i class="fa fa-check"></i><b>3.2.1</b> Continuous Integration / Continuous Deployment</a></li>
 <li class="chapter" data-level="3.2.2" data-path="why-automation.html"><a href="why-automation.html#a-real-world-example"><i class="fa fa-check"></i><b>3.2.2</b> A real world example</a></li>
 <li class="chapter" data-level="3.2.3" data-path="why-automation.html"><a href="why-automation.html#other-cicd-services"><i class="fa fa-check"></i><b>3.2.3</b> Other CI/CD services</a></li>
 </ul></li>
@@ -182,7 +182,7 @@ div.csl-indent {
 <li class="chapter" data-level="7.1.2" data-path="troubleshooting-github-actions.html"><a href="troubleshooting-github-actions.html#look-at-the-logs-closely"><i class="fa fa-check"></i><b>7.1.2</b> Look at the logs closely!</a></li>
 <li class="chapter" data-level="7.1.3" data-path="troubleshooting-github-actions.html"><a href="troubleshooting-github-actions.html#use-workflow_dispatchpull_request-triggers-for-development"><i class="fa fa-check"></i><b>7.1.3</b> Use workflow_dispatch/pull_request triggers for development</a></li>
 <li class="chapter" data-level="7.1.4" data-path="troubleshooting-github-actions.html"><a href="troubleshooting-github-actions.html#print-out-things-to-test-your-assumptions"><i class="fa fa-check"></i><b>7.1.4</b> Print out things to test your assumptions</a></li>
-<li class="chapter" data-level="7.1.5" data-path="troubleshooting-github-actions.html"><a href="troubleshooting-github-actions.html#use-marketplace-actions"><i class="fa fa-check"></i><b>7.1.5</b> Use Marketplace actions</a></li>
+<li class="chapter" data-level="7.1.5" data-path="troubleshooting-github-actions.html"><a href="troubleshooting-github-actions.html#use-marketplace-actions"><i class="fa fa-check"></i><b>7.1.5</b> Use Marketplace Actions</a></li>
 </ul></li>
 <li class="chapter" data-level="7.2" data-path="troubleshooting-github-actions.html"><a href="troubleshooting-github-actions.html#activity-troubleshooting-github-actions"><i class="fa fa-check"></i><b>7.2</b> Activity: Troubleshooting GitHub Actions</a>
 <ul>
@@ -240,7 +240,7 @@ div.csl-indent {
 <div id="troubleshooting-github-actions" class="section level1" number="7">
 <h1><span class="header-section-number">Chapter 7</span> Troubleshooting GitHub Actions</h1>
 <p><img src="07-gha-troubleshooting_files/figure-html/1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g290614d43ec_0_62.png" width="100%" style="display: block; margin: auto;" /></p>
-<p>Many of your standard programming troubleshooting skills are applicable with GitHub actions. In this chapter we’ll five you a few more tips for what might be the most common ways that GitHub Actions can break and what those error messages might look like.</p>
+<p>Many of your standard programming troubleshooting skills are applicable with GitHub Actions. In this chapter we’ll give you a few more tips for what might be the most common ways that GitHub Actions can break and what those error messages might look like.</p>
 <div id="tips" class="section level2" number="7.1">
 <h2><span class="header-section-number">7.1</span> Tips</h2>
 <div id="look-out-for-silent-errors" class="section level3" number="7.1.1">
@@ -266,7 +266,7 @@ div.csl-indent {
 </div>
 <div id="look-at-the-logs-closely" class="section level3" number="7.1.2">
 <h3><span class="header-section-number">7.1.2</span> Look at the logs closely!</h3>
-<p>Whether you GitHub Action fails or not, go to the logs to see how they ran. You can get there by going to Actions tab and clicking on the workflow you want to check on.</p>
+<p>Whether your GitHub Action fails or not, go to the logs to see how they ran. You can get there by going to Actions tab and clicking on the workflow you want to check on.</p>
 <p>You should start by scrolling down on the Actions page to look at the <code>Annotations</code>. This is GitHub Action’s summary of how the workflow ran. However, the summary is often unlikely to give you enough information to troubleshoot a failed action.</p>
 <p>In order to find out what the error message really is, you may need to dig into the logs deeper than that. Usually when you open up the log it will open up the step that it detects has failed.</p>
 <p>Read carefully what output happened here versus what you expected to happen. You may want to use the arrow to show what commands were specifically run. Sometimes you may need to look in earlier steps to really pinpoint what has happened.</p>
@@ -277,7 +277,7 @@ div.csl-indent {
 <p>Regardless of whether you want your final GitHub Action to run on a <code>pull_request</code> or <code>workflow_dispatch</code> triggers, it can be helpful during development to use these. You can have multiple triggers for a GitHub actions.</p>
 <p>The <code>pull_request</code> trigger is helpful for development so that every time you push to your pull request your action will be re-run automatically so you can see if what you tried worked. This is the default method (in my mind) for developing a GitHub action. The only instance you may not want to use this method is if you are using GitHub default variables that are different in pull requests than they will be in your final version of the GitHub Action. In that instance a <code>pull_request</code> may not be a representative test for you.</p>
 <p>The <code>workflow_dispatch</code> trigger is useful so you can re-trigger the workflow run whenever you need to test the next thing you tried for troubleshooting purposes. You might consider doing this if your testing as a pull request isn’t appropriate. You can also initiate <code>workflow_dispatch</code> workflow runs from any branch – so you don’t have to merge it before you’ve polished it.</p>
-<p>There’s two caveats to this strategy:</p>
+<p>There are two caveats to this strategy:</p>
 <ol style="list-style-type: decimal">
 <li>If you don’t want these triggers long term, make sure you delete them before you merge to main.</li>
 <li>Recall that if you are using default environment variables in your workflow runs that those change depending on the triggers, so those may not always be representative of the workflow run as you it will be run with the final version.</li>
@@ -292,14 +292,14 @@ div.csl-indent {
 <p>This may help you figure out whether a variable or file isn’t in the place you think it is.</p>
 </div>
 <div id="use-marketplace-actions" class="section level3" number="7.1.5">
-<h3><span class="header-section-number">7.1.5</span> Use Marketplace actions</h3>
+<h3><span class="header-section-number">7.1.5</span> Use Marketplace Actions</h3>
 <p>The great part about using GitHub Actions is that you can use other people’s actions from the marketplace so you don’t have to write everything from scratch!</p>
 <p>This however, does mean that you are dependent on the developers and maintainers of these GitHub Actions.</p>
 <p>There are three tips for troubleshooting a problematic GitHub Action that is borrowed from marketplace:</p>
 <ol style="list-style-type: decimal">
 <li>Read their docs carefully and make sure you are using it as specified.</li>
 <li>Try bumping up to a later version if it looks like there’s a bug that may have been addressed.</li>
-<li>Try not to use Marketplace actions that don’t show evidence of being maintained or don’t have fully fledged documentation!</li>
+<li>Try not to use Marketplace Actions that don’t show evidence of being maintained or don’t have fully fledged documentation!</li>
 </ol>
 </div>
 </div>

@@ -12,8 +12,8 @@ The course is intended for students in the biomedical sciences and researchers w
 _This course is written for individuals who:_   
 
 - Are comfortable with GitHub and know how to make a pull request  
-- Wish to save time and enhance their scientific projects using  automation
-- Perhaps previously tried to learn about GitHub Actions but felt overwhelmed on how to get started
+- Wish to save time and enhance their scientific projects using automation
+- Have perhaps tried to learn about GitHub Actions before but felt overwhelmed about how to start
 
 
 <img src="resources/images/01-intro_files/figure-html//1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g1173f7473f7_0_0.png" width="100%" />
@@ -56,4 +56,4 @@ This course is meant to teach learners how to create sophisticated GitHub Action
 
 ## How to use the course
 
-Ideally you should follow along with the chapters and perform they activities as they are described. These activities involve using GitHub and GitHub actions. You will need a GitHub account and basic familiarity with GitHub. 
+Ideally you should follow along with the chapters and perform the activities as they are described. These activities involve using GitHub and GitHub actions. You will need a GitHub account and basic familiarity with GitHub. 

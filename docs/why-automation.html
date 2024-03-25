@@ -131,9 +131,9 @@ div.csl-indent {
 <li class="chapter" data-level="3.1.1" data-path="why-automation.html"><a href="why-automation.html#why-reproducibility-is-so-important."><i class="fa fa-check"></i><b>3.1.1</b> Why reproducibility is so important.</a></li>
 <li class="chapter" data-level="3.1.2" data-path="why-automation.html"><a href="why-automation.html#automation-as-a-reproducibility-tool"><i class="fa fa-check"></i><b>3.1.2</b> Automation as a reproducibility tool</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="why-automation.html"><a href="why-automation.html#continuous-integration-continous-deployment"><i class="fa fa-check"></i><b>3.2</b> Continuous integration / Continous deployment</a>
+<li class="chapter" data-level="3.2" data-path="why-automation.html"><a href="why-automation.html#continuous-integration-continuous-deployment"><i class="fa fa-check"></i><b>3.2</b> Continuous integration / Continuous deployment</a>
 <ul>
-<li class="chapter" data-level="3.2.1" data-path="why-automation.html"><a href="why-automation.html#continous-integration-continuous-deployment"><i class="fa fa-check"></i><b>3.2.1</b> Continous Integration / Continuous Deployment</a></li>
+<li class="chapter" data-level="3.2.1" data-path="why-automation.html"><a href="why-automation.html#continuous-integration-continuous-deployment-1"><i class="fa fa-check"></i><b>3.2.1</b> Continuous Integration / Continuous Deployment</a></li>
 <li class="chapter" data-level="3.2.2" data-path="why-automation.html"><a href="why-automation.html#a-real-world-example"><i class="fa fa-check"></i><b>3.2.2</b> A real world example</a></li>
 <li class="chapter" data-level="3.2.3" data-path="why-automation.html"><a href="why-automation.html#other-cicd-services"><i class="fa fa-check"></i><b>3.2.3</b> Other CI/CD services</a></li>
 </ul></li>
@@ -182,7 +182,7 @@ div.csl-indent {
 <li class="chapter" data-level="7.1.2" data-path="troubleshooting-github-actions.html"><a href="troubleshooting-github-actions.html#look-at-the-logs-closely"><i class="fa fa-check"></i><b>7.1.2</b> Look at the logs closely!</a></li>
 <li class="chapter" data-level="7.1.3" data-path="troubleshooting-github-actions.html"><a href="troubleshooting-github-actions.html#use-workflow_dispatchpull_request-triggers-for-development"><i class="fa fa-check"></i><b>7.1.3</b> Use workflow_dispatch/pull_request triggers for development</a></li>
 <li class="chapter" data-level="7.1.4" data-path="troubleshooting-github-actions.html"><a href="troubleshooting-github-actions.html#print-out-things-to-test-your-assumptions"><i class="fa fa-check"></i><b>7.1.4</b> Print out things to test your assumptions</a></li>
-<li class="chapter" data-level="7.1.5" data-path="troubleshooting-github-actions.html"><a href="troubleshooting-github-actions.html#use-marketplace-actions"><i class="fa fa-check"></i><b>7.1.5</b> Use Marketplace actions</a></li>
+<li class="chapter" data-level="7.1.5" data-path="troubleshooting-github-actions.html"><a href="troubleshooting-github-actions.html#use-marketplace-actions"><i class="fa fa-check"></i><b>7.1.5</b> Use Marketplace Actions</a></li>
 </ul></li>
 <li class="chapter" data-level="7.2" data-path="troubleshooting-github-actions.html"><a href="troubleshooting-github-actions.html#activity-troubleshooting-github-actions"><i class="fa fa-check"></i><b>7.2</b> Activity: Troubleshooting GitHub Actions</a>
 <ul>
@@ -263,9 +263,9 @@ div.csl-indent {
 <p><img src="03-why-automation_files/figure-html/1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g27a5d68b667_0_1764.png" width="100%" /></p>
 </div>
 </div>
-<div id="continuous-integration-continous-deployment" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> Continuous integration / Continous deployment</h2>
-<p>Before we discuss the concept of Continous integration / Continuous deployment (often abbreviated CI/CD), let’s use an analogy.</p>
+<div id="continuous-integration-continuous-deployment" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Continuous integration / Continuous deployment</h2>
+<p>Before we discuss the concept of Continuous integration / Continuous deployment (often abbreviated CI/CD), let’s use an analogy.</p>
 <p><img src="03-why-automation_files/figure-html/1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g27a8d088b93_0_11.png" width="100%" /></p>
 <p>Obviously we are getting at here, that generally its a good idea to check work along the way instead of waiting until something is completely finished to test it.</p>
 <p>Software is no exception to this idea. Often if we send a collaborator an enormous amount of code to review; they are likely to feel overwhelmed and may not be able to give useful feedback.</p>
@@ -277,12 +277,12 @@ div.csl-indent {
 <p>Let’s assume over the course of developing a project, bugs are introduced at a certain rate.</p>
 <p><img src="03-why-automation_files/figure-html/1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g290614d43ec_0_223.png" width="100%" /></p>
 <p>Without using CI/CD you may find yourself trying to fix many bugs at once! This will make the bugs harder to isolate and harder to fix and pinpoint. The amount of time it will take to fix 3 bugs at once may be exponentially higher than if you caught these bugs one at a time. Additionally, the longer amount of time that goes on before you catch a bug, it may be more likely it will get accidentally incorporated into your published results – this will be a lot more work for you and others to rectify.</p>
-<p>However with CI/CD you will likely catch these bugs earlier and have an easier time fixing them before they truly run a muck! A good continuous integration / continuous deployment pipeline will help you identify these bugs early and save time and stress!</p>
+<p>However with CI/CD you will likely catch these bugs earlier and have an easier time fixing them before they truly run amock! A good continuous integration / continuous deployment pipeline will help you identify these bugs early and save time and stress!</p>
 <p><img src="03-why-automation_files/figure-html/1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g286f0c8db1a_0_68.png" width="100%" /></p>
 <p>This is not only true for classic “my script won’t run” bugs but also “silent” bugs – bugs where the analysis still ran to completion but perhaps the results were slightly different.</p>
 <p><img src="03-why-automation_files/figure-html/1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g286f0c8db1a_0_33.png" width="100%" /></p>
-<div id="continous-integration-continuous-deployment" class="section level3" number="3.2.1">
-<h3><span class="header-section-number">3.2.1</span> Continous Integration / Continuous Deployment</h3>
+<div id="continuous-integration-continuous-deployment-1" class="section level3" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Continuous Integration / Continuous Deployment</h3>
 <p>A workflow that uses CI/CD principles may look like this:</p>
 <p><img src="03-why-automation_files/figure-html/1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g290614d43ec_0_277.png" width="100%" />
 The idea is we use version control and build aspects of our software. Before what we’ve built is incorporated into the published version, we will stage it and test it. By staging we mean that perhaps we keep it stored on a different branch and have ways that we can play around with the <a href="https://en.wiktionary.org/wiki/beta_version">beta version</a> of the analysis or product before our most recent adds are incorporated.</p>

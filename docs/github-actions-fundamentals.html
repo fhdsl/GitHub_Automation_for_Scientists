@@ -131,9 +131,9 @@ div.csl-indent {
 <li class="chapter" data-level="3.1.1" data-path="why-automation.html"><a href="why-automation.html#why-reproducibility-is-so-important."><i class="fa fa-check"></i><b>3.1.1</b> Why reproducibility is so important.</a></li>
 <li class="chapter" data-level="3.1.2" data-path="why-automation.html"><a href="why-automation.html#automation-as-a-reproducibility-tool"><i class="fa fa-check"></i><b>3.1.2</b> Automation as a reproducibility tool</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="why-automation.html"><a href="why-automation.html#continuous-integration-continous-deployment"><i class="fa fa-check"></i><b>3.2</b> Continuous integration / Continous deployment</a>
+<li class="chapter" data-level="3.2" data-path="why-automation.html"><a href="why-automation.html#continuous-integration-continuous-deployment"><i class="fa fa-check"></i><b>3.2</b> Continuous integration / Continuous deployment</a>
 <ul>
-<li class="chapter" data-level="3.2.1" data-path="why-automation.html"><a href="why-automation.html#continous-integration-continuous-deployment"><i class="fa fa-check"></i><b>3.2.1</b> Continous Integration / Continuous Deployment</a></li>
+<li class="chapter" data-level="3.2.1" data-path="why-automation.html"><a href="why-automation.html#continuous-integration-continuous-deployment-1"><i class="fa fa-check"></i><b>3.2.1</b> Continuous Integration / Continuous Deployment</a></li>
 <li class="chapter" data-level="3.2.2" data-path="why-automation.html"><a href="why-automation.html#a-real-world-example"><i class="fa fa-check"></i><b>3.2.2</b> A real world example</a></li>
 <li class="chapter" data-level="3.2.3" data-path="why-automation.html"><a href="why-automation.html#other-cicd-services"><i class="fa fa-check"></i><b>3.2.3</b> Other CI/CD services</a></li>
 </ul></li>
@@ -182,7 +182,7 @@ div.csl-indent {
 <li class="chapter" data-level="7.1.2" data-path="troubleshooting-github-actions.html"><a href="troubleshooting-github-actions.html#look-at-the-logs-closely"><i class="fa fa-check"></i><b>7.1.2</b> Look at the logs closely!</a></li>
 <li class="chapter" data-level="7.1.3" data-path="troubleshooting-github-actions.html"><a href="troubleshooting-github-actions.html#use-workflow_dispatchpull_request-triggers-for-development"><i class="fa fa-check"></i><b>7.1.3</b> Use workflow_dispatch/pull_request triggers for development</a></li>
 <li class="chapter" data-level="7.1.4" data-path="troubleshooting-github-actions.html"><a href="troubleshooting-github-actions.html#print-out-things-to-test-your-assumptions"><i class="fa fa-check"></i><b>7.1.4</b> Print out things to test your assumptions</a></li>
-<li class="chapter" data-level="7.1.5" data-path="troubleshooting-github-actions.html"><a href="troubleshooting-github-actions.html#use-marketplace-actions"><i class="fa fa-check"></i><b>7.1.5</b> Use Marketplace actions</a></li>
+<li class="chapter" data-level="7.1.5" data-path="troubleshooting-github-actions.html"><a href="troubleshooting-github-actions.html#use-marketplace-actions"><i class="fa fa-check"></i><b>7.1.5</b> Use Marketplace Actions</a></li>
 </ul></li>
 <li class="chapter" data-level="7.2" data-path="troubleshooting-github-actions.html"><a href="troubleshooting-github-actions.html#activity-troubleshooting-github-actions"><i class="fa fa-check"></i><b>7.2</b> Activity: Troubleshooting GitHub Actions</a>
 <ul>
@@ -249,7 +249,7 @@ div.csl-indent {
 <li>What should be run?</li>
 <li>With what environment should the thing be run?</li>
 </ol>
-<p>These questions and other specifications are set by writing a <a href="https://www.redhat.com/en/topics/automation/what-is-yaml">YAML file</a>. YAML files are human readable markup language files. Basically its a list that is easy for humans to read and write and computers can read them too. This makes it good for writing a GitHub Action. Essentially, we’re going to write a YAML file to make a recipe that GitHub will read to know what/when/with what we are trying to do.</p>
+<p>These questions and other specifications are set by writing a <a href="https://www.redhat.com/en/topics/automation/what-is-yaml">YAML file</a>. YAML files are human readable markup language files. Basically it’s a list that is easy for humans to read and write and computers can read them too. This makes it good for writing a GitHub Action. Essentially, we’re going to write a YAML file to make a recipe that GitHub will read to know what/when/with what we are trying to do.</p>
 <p><img src="04-gha-basics_files/figure-html/1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g280d2b56f79_0_2781.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>The headlines about working with YAML files:</p>
 <ol style="list-style-type: decimal">
@@ -258,7 +258,7 @@ div.csl-indent {
 <li>Spacing is VERY specific! – incorrect spacing will definitely result in errors for your GitHub Action run.</li>
 </ol>
 <p>Let’s take a look at an example YAML.
-Note that the what comes before a <code>:</code> is generally a name and indent indicate subsets of a list. So in the overall list of <code>food</code> we have sublists of <code>vegetables</code> and <code>fruits</code>. <code>#</code> can be used as a comment and will not be treated as code.</p>
+Note that what comes before a <code>:</code> is generally a name and indentations indicate subsets of a list. So in the overall list of <code>food</code> we have sublists of <code>vegetables</code> and <code>fruits</code>. <code>#</code> can be used as a comment and will not be treated as code.</p>
 <p>Additionally, <code>:</code> are often names. So <code>citrus</code> is the name for the item <code>oranges</code> and etc.</p>
 <pre><code># A comment here which is ignored
 food:
@@ -340,13 +340,13 @@ food:
 <p>What do we mean by a computing environment? As just like when you work on your personal computer, you install, update, and sometimes delete software in order to run different things, the GitHub Actions computers need to do the same in order to run your code. Although some person from Microsoft isn’t setting up a new physical computer and manually installing software, the specs you give underneath <code>runs-on:</code> tell GitHub Actions what kind of set up to use.</p>
 <p>So for example, there are built in operating systems like <code>windows-latest</code>, <code>mac-latest</code>, and <code>ubuntu-latest</code>. You can see more about the <a href="https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#supported-runners-and-hardware-resources">default GitHub runners here</a>.</p>
 <p><img src="04-gha-basics_files/figure-html/1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g280d2b56f79_0_2843.png" width="100%" style="display: block; margin: auto;" /></p>
-<p>But just like a Windows machine straight out of a box is unlikely to have everything you need to run some code, you may need a more specific computing environment. You can also create custom environments using <code>containerization</code>.</p>
+<p>Similarly to how a new Windows computer may not come equipped with all the software you need to execute certain code, you might require a more tailored computing environment. You can also create custom environments using <code>containerization</code>.</p>
 </div>
 <div id="containerization" class="section level3" number="4.1.4">
 <h3><span class="header-section-number">4.1.4</span> Containerization</h3>
 <p>A “virtual machine” is basically when your computer creates its own fake computer inside of it. It’s acting like a different computer but it doesn’t have any additional physical parts.</p>
 <p><img src="04-gha-basics_files/figure-html/1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g285ab2029e8_0_2.png" width="100%" style="display: block; margin: auto;" /></p>
-<p>Containers aren’t virtual machines, but they do a similar thing, which is they spin up a computing environment where you can do things. They are called containers because they are isolated from the rest of your computer.</p>
+<p>Containers, while not virtual machines, serve a similar purpose by creating an isolated computing environment where tasks can be performed. They are named “containers” due to their separation from the rest of your computer.</p>
 <p>Containerization is useful because it allows us to share our computing environments with others. This is useful because it can be a powerful tool for reproducing analyses if we are controlling our computing environments.</p>
 <p>The software you use, and the versions of the software you use can affect the results from an analysis <span class="citation">(<a href="#ref-BeaulieuJones2017" role="doc-biblioref">Beaulieu-Jones and Greene 2017</a>)</span>.</p>
 <p><img src="04-gha-basics_files/figure-html/1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g280d2b56f79_0_2889.png" width="100%" style="display: block; margin: auto;" /></p>
@@ -363,7 +363,7 @@ food:
 <p><img src="04-gha-basics_files/figure-html/1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g280d2b56f79_0_2942.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>Docker is a whole other world. There’s whole conferences, hackathons, and etc devoted to Docker and other containerization software. It can be a lot to learn. To start, we recommend borrowing other people’s Docker images as much as possible instead of trying to build your own And then install the few packages you need. (more on this in a future chapter)</p>
 <div class="warning">
-<p>Super important side note: DO NOT put data that needs to be secured like Personally Identifiable Information (PII) and Personal Health Information (PHI) data on your Docker images! Especially when you share them! They are not meant for this purpose and this data would be exposed!</p>
+<p>Super important side note: DO NOT put data that needs to be secured like Personally Identifiable Information (PII) and Personal Health Information (PHI) data in your Docker images! Especially when you share them! They are not meant for this purpose and this data would be exposed!</p>
 </div>
 <div id="more-resources-about-docker" class="section level4" number="4.1.4.1">
 <h4><span class="header-section-number">4.1.4.1</span> More resources about Docker</h4>

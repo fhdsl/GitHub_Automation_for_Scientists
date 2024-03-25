@@ -16,8 +16,8 @@ why-automation
 automation-as-an-aid-for-reproducibility
 why-reproducibility-is-so-important.
 automation-as-a-reproducibility-tool
-continuous-integration-continous-deployment
-continous-integration-continuous-deployment
+continuous-integration-continuous-deployment
+continuous-integration-continuous-deployment-1
 a-real-world-example
 other-cicd-services
 github-actions-fundamentals

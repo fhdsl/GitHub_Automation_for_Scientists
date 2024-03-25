@@ -96,7 +96,8 @@ To do this we can use this sort of set up:
 
 <img src="06-gha-variables_files/figure-html//1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g290614d43ec_0_2.png" width="100%" style="display: block; margin: auto;" />
 
-Step that sets a variable depending on some output
+Step that sets a variable depending on some output:
+
 ```
 # How to export a variable to a next step
 - name: Setting output to the environment at large

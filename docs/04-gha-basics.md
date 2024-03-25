@@ -16,7 +16,7 @@ All GitHub Actions involve answering three questions:
 2. What should be run?
 3. With what environment should the thing be run?
 
-These questions and other specifications are set by writing a [YAML file](https://www.redhat.com/en/topics/automation/what-is-yaml). YAML files are human readable markup language files. Basically its a list that is easy for humans to read and write and computers can read them too. This makes it good for writing a GitHub Action. Essentially, we're going to write a YAML file to make a recipe that GitHub will read to know what/when/with what we are trying to do.
+These questions and other specifications are set by writing a [YAML file](https://www.redhat.com/en/topics/automation/what-is-yaml). YAML files are human readable markup language files. Basically it's a list that is easy for humans to read and write and computers can read them too. This makes it good for writing a GitHub Action. Essentially, we're going to write a YAML file to make a recipe that GitHub will read to know what/when/with what we are trying to do.
 
 <img src="04-gha-basics_files/figure-html//1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g280d2b56f79_0_2781.png" width="100%" style="display: block; margin: auto;" />
 
@@ -27,7 +27,7 @@ The headlines about working with YAML files:
 1. Spacing is VERY specific! -- incorrect spacing will definitely result in errors for your GitHub Action run.
 
 Let's take a look at an example YAML.
-Note that the what comes before a `:` is generally a name and indent indicate subsets of a list. So in the overall list of `food` we have sublists of `vegetables` and `fruits`. `#` can be used as a comment and will not be treated as code.
+Note that what comes before a `:` is generally a name and indentations indicate subsets of a list. So in the overall list of `food` we have sublists of `vegetables` and `fruits`. `#` can be used as a comment and will not be treated as code.
 
 Additionally, `:` are often names. So `citrus` is the name for the item `oranges` and etc.
 ```
@@ -107,7 +107,7 @@ So for example, there are built in operating systems like `windows-latest`, `mac
 
 <img src="04-gha-basics_files/figure-html//1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g280d2b56f79_0_2843.png" width="100%" style="display: block; margin: auto;" />
 
-But just like a Windows machine straight out of a box is unlikely to have everything you need to run some code, you may need a more specific computing environment. You can also create custom environments using `containerization`.
+Similarly to how a new Windows computer may not come equipped with all the software you need to execute certain code, you might require a more tailored computing environment. You can also create custom environments using `containerization`.
 
 ### Containerization
 
@@ -115,7 +115,7 @@ A "virtual machine" is basically when your computer creates its own fake compute
 
 <img src="04-gha-basics_files/figure-html//1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g285ab2029e8_0_2.png" width="100%" style="display: block; margin: auto;" />
 
-Containers aren't virtual machines, but they do a similar thing, which is they spin up a computing environment where you can do things. They are called containers because they are isolated from the rest of your computer.
+Containers, while not virtual machines, serve a similar purpose by creating an isolated computing environment where tasks can be performed. They are named "containers" due to their separation from the rest of your computer.
 
 Containerization is useful because it allows us to share our computing environments with others. This is useful because it can be a powerful tool for reproducing analyses if we are controlling our computing environments.
 
@@ -151,7 +151,7 @@ Docker is a whole other world. There's whole conferences, hackathons, and etc de
 
 <div class = "warning">
 
-Super important side note: DO NOT put data that needs to be secured like Personally Identifiable Information (PII) and Personal Health Information (PHI) data on your Docker images! Especially when you share them! They are not meant for this purpose and this data would be exposed!
+Super important side note: DO NOT put data that needs to be secured like Personally Identifiable Information (PII) and Personal Health Information (PHI) data in your Docker images! Especially when you share them! They are not meant for this purpose and this data would be exposed!
 
 </div>
 

@@ -4,7 +4,7 @@
 
 <img src="07-gha-troubleshooting_files/figure-html//1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g290614d43ec_0_62.png" width="100%" style="display: block; margin: auto;" />
 
-Many of your standard programming troubleshooting skills are applicable with GitHub actions. In this chapter we'll five you a few more tips for what might be the most common ways that GitHub Actions can break and what those error messages might look like.
+Many of your standard programming troubleshooting skills are applicable with GitHub Actions. In this chapter we'll give you a few more tips for what might be the most common ways that GitHub Actions can break and what those error messages might look like.
 
 ## Tips
 
@@ -42,7 +42,7 @@ In order to design these steps you are going to need to look closely at your log
 
 ### Look at the logs closely!
 
-Whether you GitHub Action fails or not, go to the logs to see how they ran. You can get there by going to Actions tab and clicking on the workflow you want to check on.
+Whether your GitHub Action fails or not, go to the logs to see how they ran. You can get there by going to Actions tab and clicking on the workflow you want to check on.
 
 You should start by scrolling down on the Actions page to look at the `Annotations`. This is GitHub Action's summary of how the workflow ran. However, the summary is often unlikely to give you enough information to troubleshoot a failed action.
 
@@ -60,7 +60,7 @@ The `pull_request` trigger is helpful for development so that every time you pus
 
 The `workflow_dispatch` trigger is useful so you can re-trigger the workflow run whenever you need to test the next thing you tried for troubleshooting purposes. You might consider doing this if your testing as a pull request isn't appropriate. You can also initiate `workflow_dispatch` workflow runs from any branch -- so you don't have to merge it before you've polished it.
 
-There's two caveats to this strategy:
+There are two caveats to this strategy:
 
 1. If you don't want these triggers long term, make sure you delete them before you merge to main.
 2. Recall that if you are using default environment variables in your workflow runs that those change depending on the triggers, so those may not always be representative of the workflow run as you it will be run with the final version.
@@ -77,7 +77,7 @@ run: |
 
 This may help you figure out whether a variable or file isn't in the place you think it is.
 
-### Use Marketplace actions
+### Use Marketplace Actions
 
 The great part about using GitHub Actions is that you can use other people's actions from the marketplace so you don't have to write everything from scratch!
 
@@ -87,7 +87,7 @@ There are three tips for troubleshooting a problematic GitHub Action that is bor
 
 1. Read their docs carefully and make sure you are using it as specified.
 2. Try bumping up to a later version if it looks like there's a bug that may have been addressed.
-3. Try not to use Marketplace actions that don't show evidence of being maintained or don't have fully fledged documentation!
+3. Try not to use Marketplace Actions that don't show evidence of being maintained or don't have fully fledged documentation!
 
 ## Activity: Troubleshooting GitHub Actions
 

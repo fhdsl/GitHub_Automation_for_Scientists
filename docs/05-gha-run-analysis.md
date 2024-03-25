@@ -79,11 +79,12 @@ on:
 
 In our `jobs:` we've named this job `R run analysis`.
 
-Additionally we are running this on a `ubuntu-latest` operating system, but as opposed to our first GitHub Action workflow from the previous chapter, where we didn't need any additional packages or software to run our job, this job, the analysis script we are running, requires things like R, python, and some specific packages.
+Additionally we are running this on a `ubuntu-latest` operating system, but as opposed to our first GitHub Action workflow from the previous chapter, where we didn't need any additional packages or software to run our job, this job, the analysis script we are running, requires things like R, Python, and some specific packages.
 
-We could, attempt to write a script that installs everything we need. However, that would likely be a lot of work, may not work reliably, and would be hard to track changes. Instead, we are using a custom made docker image that has R, python, and other packages we need already installed.
+We could attempt to write a script that installs everything we need. However, that would likely be a lot of work, may not work reliably, and would be hard to track changes. Instead, we are using a custom made Docker image that has R, python, and other packages we need already installed.
 
-This custom made docker image is pulled from [Dockerhub and it exists here](https://hub.docker.com/r/jhudsl/ottr_python). If you wish to make a custom Docker image to use in your analysis, easiest way to do this is to make a Dockerfile, build a Docker image from this file and then push it to Dockerhub. We have some Dockerfiles for this image and others [managed and version controlled here on this GitHub repository](https://github.com/jhudsl/ottr_docker). You may note we use GitHub Actions on this repository to help us manage these Docker images.
+This custom made Docker image is pulled from [Dockerhub](https://hub.docker.com/r/jhudsl/ottr_python). If you wish to make a custom Docker image to use in your analysis, easiest way to do this is to make a Dockerfile, build a Docker image from this file and then push it to Dockerhub. We have some Dockerfiles for this image and others [managed and version controlled on this GitHub repository](https://github.com/jhudsl/ottr_docker). You may note we use GitHub Actions on this repository to help us manage these Docker images.
+
 ```
 jobs:
   re-run:
@@ -96,7 +97,7 @@ jobs:
 
 #### actions/checkout
 
-One of the most frequently use GitHub Actions [from the GitHub Action Marketplace is `actions/checkout`](https://github.com/actions/checkout). This action will grab all the files from a GitHub repository so you can do things with those files in your workflow. (Recall that when you spin up a GitHub Action Environment it is a blank slate, so we have to put our files there too if we want to use them).
+One of the most frequently use GitHub Actions from the GitHub Action Marketplace is [`actions/checkout`](https://github.com/actions/checkout). This action will grab all the files from a GitHub repository so you can do things with those files in your workflow. (Recall that when you spin up a GitHub Action Environment it is a blank slate, so we have to put our files there too if we want to use them).
 
 ```
 steps:
@@ -109,7 +110,7 @@ steps:
 
 By default, it will checkout the files from the repository where this action is being run, but we could specify other repository and other branches.
 
-`fetch-depth: 0` means we will grab all the file.
+`fetch-depth: 0` means we will grab all the files.
 
 
 #### sh run_analysis.sh
@@ -124,7 +125,7 @@ Additionally the `|` tells `run:` to expect multiple lines of a command. We didn
   run: |
     sh run_analysis.sh
 ```  
-We have three steps in this fake analysis and the files are numbered in which order they are run. If you open up the [run_analysis.sh](https://github.com/fhdsl/github-actions-workshop/blob/main/run_analysis.sh) file, you will see its basically simple workflow step calling file.
+We have three steps in this fake analysis and the files are numbered in which order they are run. If you open up the [run_analysis.sh](https://github.com/fhdsl/github-actions-workshop/blob/main/run_analysis.sh) file, you will see it is basically a simple workflow step calling file.
 
 It looks like this:
 ```
