@@ -1,12 +1,12 @@
 url	chapt_title	img_path
-https://hutchdatascience.org/GitHub_Automation_for_Scientists/index.html	About this Course	resources/chapt_screen_images/index.png
-https://hutchdatascience.org/GitHub_Automation_for_Scientists/introduction.html	1 Introduction	resources/chapt_screen_images/introduction.png
-https://hutchdatascience.org/GitHub_Automation_for_Scientists/scientific-software-development-best-practices.html	2 Scientific software development best practices	resources/chapt_screen_images/scientific-software-development-best-practices.png
-https://hutchdatascience.org/GitHub_Automation_for_Scientists/why-automation.html	3 Why Automation	resources/chapt_screen_images/why-automation.png
-https://hutchdatascience.org/GitHub_Automation_for_Scientists/github-actions-fundamentals.html	4 GitHub Actions Fundamentals	resources/chapt_screen_images/github-actions-fundamentals.png
-https://hutchdatascience.org/GitHub_Automation_for_Scientists/automating-re-running-analyses.html	5 Automating Re-running Analyses	resources/chapt_screen_images/automating-re-running-analyses.png
-https://hutchdatascience.org/GitHub_Automation_for_Scientists/github-action-variables.html	6 GitHub Action Variables	resources/chapt_screen_images/github-action-variables.png
-https://hutchdatascience.org/GitHub_Automation_for_Scientists/troubleshooting-github-actions.html	7 Troubleshooting GitHub Actions	resources/chapt_screen_images/troubleshooting-github-actions.png
-https://hutchdatascience.org/GitHub_Automation_for_Scientists/applying-github-actions-examples.html	8 Applying GitHub Actions Examples	resources/chapt_screen_images/applying-github-actions-examples.png
-https://hutchdatascience.org/GitHub_Automation_for_Scientists/about-the-authors.html	About the Authors	resources/chapt_screen_images/about-the-authors.png
-https://hutchdatascience.org/GitHub_Automation_for_Scientists/references.html	9 References	resources/chapt_screen_images/references.png
+https://hutchdatascience.org/GitHub_Automation_for_Scientists/index.html	About this Course	./resources/chapt_screen_images/index.png
+https://hutchdatascience.org/GitHub_Automation_for_Scientists/introduction.html	1 Introduction	./resources/chapt_screen_images/introduction.png
+https://hutchdatascience.org/GitHub_Automation_for_Scientists/scientific-software-development-best-practices.html	2 Scientific software development best practices	./resources/chapt_screen_images/scientific-software-development-best-practices.png
+https://hutchdatascience.org/GitHub_Automation_for_Scientists/why-automation.html	3 Why Automation	./resources/chapt_screen_images/why-automation.png
+https://hutchdatascience.org/GitHub_Automation_for_Scientists/github-actions-fundamentals.html	4 GitHub Actions Fundamentals	./resources/chapt_screen_images/github-actions-fundamentals.png
+https://hutchdatascience.org/GitHub_Automation_for_Scientists/automating-re-running-analyses.html	5 Automating Re-running Analyses	./resources/chapt_screen_images/automating-re-running-analyses.png
+https://hutchdatascience.org/GitHub_Automation_for_Scientists/github-action-variables.html	6 GitHub Action Variables	./resources/chapt_screen_images/github-action-variables.png
+https://hutchdatascience.org/GitHub_Automation_for_Scientists/troubleshooting-github-actions.html	7 Troubleshooting GitHub Actions	./resources/chapt_screen_images/troubleshooting-github-actions.png
+https://hutchdatascience.org/GitHub_Automation_for_Scientists/applying-github-actions-examples.html	8 Applying GitHub Actions Examples	./resources/chapt_screen_images/applying-github-actions-examples.png
+https://hutchdatascience.org/GitHub_Automation_for_Scientists/about-the-authors.html	About the Authors	./resources/chapt_screen_images/about-the-authors.png
+https://hutchdatascience.org/GitHub_Automation_for_Scientists/references.html	9 References	./resources/chapt_screen_images/references.png
