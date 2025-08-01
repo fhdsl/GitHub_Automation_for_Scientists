@@ -15,14 +15,13 @@ _This course is written for individuals who:_
 - Wish to save time and enhance their scientific projects using automation
 - Have perhaps tried to learn about GitHub Actions before but felt overwhelmed about how to start
 
-
 <img src="resources/images/01-intro_files/figure-html//1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g1173f7473f7_0_0.png" width="100%" />
 
 ## Topics covered
 
 This course covers how to use GitHub actions for scientific software development. We encourage the recognition that scientific software can take many forms that can all benefit from the concepts of continuous integration and continuous deployment.
 
-<img src="resources/images/01-intro_files/figure-html//1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_gd422c5de97_0_10.png" width="100%" />
+<img src="resources/images/01-intro_files/figure-html//1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g2ab6f05fef1_0_0.png" width="100%" />
 
 This course builds on concepts introduced in the [Reproducibility](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/introduction.html) and [Advanced Reproducibility](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/introduction.html) courses from the ITCR Training Network. If you are unfamiliar with GitHub and/or do not have an account, we'd suggest you start with those courses by using the links or QR codes below.
 
@@ -53,6 +52,8 @@ Equip learners with basics skills and confidence to utilize the concepts of cont
 
 **What is not the goal**  
 This course is meant to teach learners how to create sophisticated GitHub Actions, but instead introduce learners to basic fundamentals of continuous integration and continuous deployment. This course focuses on GitHub Actions and will not cover any other (perfectly fine) tools for CI/CD.
+
+<img src="resources/images/01-intro_files/figure-html//1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_gd422c5de97_0_10.png" width="100%" />
 
 ## How to use the course
 

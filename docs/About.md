@@ -37,12 +37,12 @@ These credits are based on our [course contributors table guidelines](https://ww
 ##  collate  en_US.UTF-8
 ##  ctype    en_US.UTF-8
 ##  tz       Etc/UTC
-##  date     2024-10-23
+##  date     2025-08-01
 ##  pandoc   3.1.1 @ /usr/local/bin/ (via rmarkdown)
 ## 
 ## ─ Packages ───────────────────────────────────────────────────────────────────
 ##  package     * version date (UTC) lib source
-##  bookdown      0.40    2024-07-02 [1] CRAN (R 4.3.2)
+##  bookdown      0.41    2024-10-16 [1] CRAN (R 4.3.2)
 ##  bslib         0.6.1   2023-11-28 [1] RSPM (R 4.3.0)
 ##  cachem        1.0.8   2023-05-01 [1] RSPM (R 4.3.0)
 ##  cli           3.6.2   2023-12-11 [1] RSPM (R 4.3.0)
