@@ -46,7 +46,7 @@ food:
 ```
 
 
-Two items that every GitHub Action YAML must contain is `on:` and `jobs:`.
+Three items that every GitHub Action YAML must contain is `on:` and `jobs:` and what environment the job will use, specified with `runs-on`.
 
 - `on:` tells GitHub when something should be run. For example "whenever a pull request is opened".
 - `jobs:` tells GitHub what should be run. For example "run this bash script".
@@ -100,7 +100,7 @@ That's totally a thing a GitHub action can do! We will walk through some example
 
 And here's the good news, you don't have to write things from scratch or know ALL the languages. GitHub marketplace allows you to use really cool actions that other people have created. More on this later.
 
-```{r, fig.align='center', out.width="100%", echo = FALSE}
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt = "The structure. The steps tag indicates what steps will be run for the job"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA/edit#slide=id.g280d2b56f79_0_2843")
 ```
 
@@ -125,8 +125,8 @@ What do we mean by a computing environment? As just like when you work on your p
 
 So for example, there are built in operating systems like `windows-latest`, `mac-latest`, and `ubuntu-latest`. You can see more about the [default GitHub runners here](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#supported-runners-and-hardware-resources).
 
-```{r, fig.align='center', out.width="100%", echo = FALSE}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA/edit#slide=id.g280d2b56f79_0_2843")
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt = "The structure. The runs-on: tag indicates what operating system and environment is running the commands in the job."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA/edit?slide=id.g372863e8e09_1_0#slide=id.g372863e8e09_1_0")
 ```
 
 Similarly to how a new Windows computer may not come equipped with all the software you need to execute certain code, you might require a more tailored computing environment. You can also create custom environments using `containerization`.
