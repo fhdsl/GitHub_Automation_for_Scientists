@@ -197,7 +197,7 @@ Super important side note: DO NOT put data that needs to be secured like Persona
 
 - [Launching a Docker image](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/launching-a-docker-image.html)
 - [Modifying a Docker image](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/modifying-a-docker-image.html)
-- [Docker for data scientists](https://towardsdatascience.com/docker-for-data-scientists-5732501f0ba4)
+- [Docker for data scientists](https://towardsdatascience.com/an-intuitive-guide-to-docker-for-data-science-ba3f94e9052c)
 
 ### Summarizing
 
