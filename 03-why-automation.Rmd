@@ -86,7 +86,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1x0Cnk2Wcsg8HYkmX
 
 Without using CI/CD you may find yourself trying to fix many bugs at once! This will make the bugs harder to isolate and harder to fix and pinpoint. The amount of time it will take to fix 3 bugs at once may be exponentially higher than if you caught these bugs one at a time. Additionally, the longer amount of time that goes on before you catch a bug, it may be more likely it will get accidentally incorporated into your published results -- this will be a lot more work for you and others to rectify.
 
-However with CI/CD you will likely catch these bugs earlier and have an easier time fixing them before they truly run amock! A good continuous integration / continuous deployment pipeline will help you identify these bugs early and save time and stress!
+However with CI/CD you will likely catch these bugs earlier and have an easier time fixing them before they truly run amok! A good continuous integration / continuous deployment pipeline will help you identify these bugs early and save time and stress!
 
 ```{r, out.width = "100%", echo = FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA/edit#slide=id.g286f0c8db1a_0_68")
