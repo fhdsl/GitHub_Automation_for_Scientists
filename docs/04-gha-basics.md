@@ -40,7 +40,7 @@ food:
 ```
 
 
-Two items that every GitHub Action YAML must contain is `on:` and `jobs:`.
+Three items that every GitHub Action YAML must contain is `on:` and `jobs:` and what environment the job will use, specified with `runs-on`.
 
 - `on:` tells GitHub when something should be run. For example "whenever a pull request is opened".
 - `jobs:` tells GitHub what should be run. For example "run this bash script".
@@ -86,7 +86,7 @@ That's totally a thing a GitHub action can do! We will walk through some example
 
 And here's the good news, you don't have to write things from scratch or know ALL the languages. GitHub marketplace allows you to use really cool actions that other people have created. More on this later.
 
-<img src="04-gha-basics_files/figure-html//1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g280d2b56f79_0_2843.png" width="100%" style="display: block; margin: auto;" />
+<img src="04-gha-basics_files/figure-html//1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g280d2b56f79_0_2843.png" alt="The structure. The steps tag indicates what steps will be run for the job" width="100%" style="display: block; margin: auto;" />
 
 ### runs-on: with what:
 
@@ -105,7 +105,7 @@ What do we mean by a computing environment? As just like when you work on your p
 
 So for example, there are built in operating systems like `windows-latest`, `mac-latest`, and `ubuntu-latest`. You can see more about the [default GitHub runners here](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#supported-runners-and-hardware-resources).
 
-<img src="04-gha-basics_files/figure-html//1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g280d2b56f79_0_2843.png" width="100%" style="display: block; margin: auto;" />
+<img src="04-gha-basics_files/figure-html//1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g372863e8e09_1_0.png" alt="The structure. The runs-on: tag indicates what operating system and environment is running the commands in the job." width="100%" style="display: block; margin: auto;" />
 
 Similarly to how a new Windows computer may not come equipped with all the software you need to execute certain code, you might require a more tailored computing environment. You can also create custom environments using `containerization`.
 
@@ -159,7 +159,7 @@ Super important side note: DO NOT put data that needs to be secured like Persona
 
 - [Launching a Docker image](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/launching-a-docker-image.html)
 - [Modifying a Docker image](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/modifying-a-docker-image.html)
-- [Docker for data scientists](https://towardsdatascience.com/docker-for-data-scientists-5732501f0ba4)
+- [Docker for data scientists](https://towardsdatascience.com/an-intuitive-guide-to-docker-for-data-science-ba3f94e9052c)
 
 ### Summarizing
 
