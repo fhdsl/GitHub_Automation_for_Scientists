@@ -22,5 +22,5 @@ This course is available in multiple formats which allows you to take it in the 
 
 - The material for this course can be viewed without login requirement on this [Bookdown website](http://hutchdatascience.org/GitHub_Automation_for_Scientists/). This format might be most appropriate for you if you rely on screen-reader technology.
 - This course can be taken for [free certification through Leanpub](https://leanpub.com/courses/fredhutch/github-automation-for-scientists).
-This course can be taken on [Coursera for certification for a fee here](https://www.coursera.org/learn/smarter-scientific-software-development-with-github-actions) (this course can also be audited for free on Coursera). 
+- This course can be taken on [Coursera for certification for a fee here](https://www.coursera.org/learn/smarter-scientific-software-development-with-github-actions) (this course can also be audited for free on Coursera). 
 - Our courses are open source, you can find the [source material for this course on GitHub](https://github.com/fhdsl/GitHub_Automation_for_Scientists).
