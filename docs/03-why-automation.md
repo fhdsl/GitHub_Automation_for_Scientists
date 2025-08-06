@@ -68,7 +68,7 @@ Let's assume over the course of developing a project, bugs are introduced at a c
 
 Without using CI/CD you may find yourself trying to fix many bugs at once! This will make the bugs harder to isolate and harder to fix and pinpoint. The amount of time it will take to fix 3 bugs at once may be exponentially higher than if you caught these bugs one at a time. Additionally, the longer amount of time that goes on before you catch a bug, it may be more likely it will get accidentally incorporated into your published results -- this will be a lot more work for you and others to rectify.
 
-However with CI/CD you will likely catch these bugs earlier and have an easier time fixing them before they truly run amock! A good continuous integration / continuous deployment pipeline will help you identify these bugs early and save time and stress!
+However with CI/CD you will likely catch these bugs earlier and have an easier time fixing them before they truly run amok! A good continuous integration / continuous deployment pipeline will help you identify these bugs early and save time and stress!
 
 <img src="03-why-automation_files/figure-html//1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA_g286f0c8db1a_0_68.png" width="100%" />
 
