@@ -245,7 +245,7 @@ git clone https://github.com/<your-username>/github-actions-workshop
 5. Create a new branch by clicking the buttons as shown here or using the command line examples below
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA/edit#slide=id.g280d2b56f79_0_3088")  
+ottrpal::include_slide("https://docs.google.com/presentation/d/1x0Cnk2Wcsg8HYkmXnXo_0PxmYCxAwzVrUQzb8DUDvTA/edit#slide=id.g280d2b56f79_0_3088")
 ```
 
 ```
