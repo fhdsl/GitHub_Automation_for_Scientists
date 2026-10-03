@@ -91,7 +91,7 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{needs.yaml-check.outputs.toggle_style_code == 'true'}}
     container:
-      image: jhudsl/base_ottr:testOttrpal
+      image: jhudsl/base_ottr:main-r4.4.0
 
     steps:
       - name: Checkout files
