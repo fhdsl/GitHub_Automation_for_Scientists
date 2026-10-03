@@ -74,7 +74,7 @@ jobs:
 
     - name: Run Reports
       id: run-reports
-      uses: ottrproject/ottr-reports@main
+      uses: ottrproject/ottr-reports@testOttrpal
       with:
         check_spelling: ${{needs.yaml-check.outputs.toggle_spell_check}}
         spelling_error_min: ${{needs.yaml-check.outputs.spell_error_min}}
@@ -91,7 +91,7 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{needs.yaml-check.outputs.toggle_style_code == 'true'}}
     container:
-      image: jhudsl/base_ottr:main
+      image: jhudsl/base_ottr:testOttrpal
 
     steps:
       - name: Checkout files
