@@ -74,7 +74,7 @@ jobs:
 
     - name: Run Reports
       id: run-reports
-      uses: ottrproject/ottr-reports@testOttrpal
+      uses: ottrproject/ottr-reports@kweav-test-ottrpal
       with:
         check_spelling: ${{needs.yaml-check.outputs.toggle_spell_check}}
         spelling_error_min: ${{needs.yaml-check.outputs.spell_error_min}}
