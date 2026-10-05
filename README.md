@@ -1,5 +1,9 @@
 # GitHub Automation for Scientists 
 
+[![Render Bookdown, Leanpub, and Coursera](https://github.com/fhdsl/GitHub_Automation_for_Scientists/actions/workflows/render-all.yml/badge.svg)](https://github.com/fhdsl/GitHub_Automation_for_Scientists/actions/workflows/render-all.yml)
+
+<a href="https://doi.org/10.5281/zenodo.23167854"><img src="https://zenodo.org/badge/685517736.svg" alt="DOI"></a>
+
 This course covers how to use GitHub actions for scientific software development. We encourage the recognition that scientific software can take many forms that can all benefit from the concepts of continuous integration and continuous deployment.
 
 ## Target Audience  
